@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "degree": "BTech CSE ",
+    "institution": "Rai University | Coding Gita",
+    "duration": "2024 - 2028",
+    "gpa": "3.8/4.0",
+    "description": "Focused on software engineering, algorithms, and web development. Completed projects in machine learning and mobile app development."
+  },
+  {
+    "id": 2,
+    "degree": "High School (12th)",
+    "institution": "Vidhyadhish Vidhyasankul, Bhavanagar city, Gujarat",
+    "duration": "2023-2024",
+    "gpa": "3.9/4.0",
+    "description": "Completed my 12th with Non medical stream"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
+    "thumbnail": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "techStack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    "createdDate": "2024-01-15",
+    "liveDemo": "https://example.com",
+    "github": "https://github.com/example/ecommerce"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    "thumbnail": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "techStack": ["React", "Firebase", "Material-UI", "Socket.io"],
+    "createdDate": "2023-11-20",
+    "liveDemo": "https://example.com",
+    "github": "https://github.com/example/taskapp"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "A responsive weather dashboard with location-based forecasts, interactive charts, and weather alerts using OpenWeather API.",
+    "thumbnail": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "techStack": ["React", "TypeScript", "Chart.js", "OpenWeather API"],
+    "createdDate": "2023-09-10",
+    "liveDemo": "https://example.com",
+    "github": "https://github.com/example/weather"
+  }
+]
