@@ -1,23 +1,37 @@
 [
   {
     "id": 1,
-    "title": "AWS Certified Solutions Architect",
-    "issuer": "Amazon Web Services",
-    "date": "2024-02-15",
-    "image": "https://images.pexels.com/photos/5474298/pexels-photo-5474298.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "title": "Azure Fundamentals",
+    "issuer": "Simply Learn | Skillup",
+    "date": " 23-06-2025",
+    "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754376679/Screenshot_2025-06-23_171611_nevzol.png"
   },
   {
     "id": 2,
-    "title": "React Developer Certification",
-    "issuer": "Meta",
-    "date": "2023-12-10",
-    "image": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "title": "Node(basic)",
+    "issuer": "HackerRank",
+    "date": "02-06-2025",
+    "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754376678/Screenshot_2025-06-09_115856_k37h32.png"
   },
   {
     "id": 3,
-    "title": "Full Stack Web Development",
-    "issuer": "freeCodeCamp",
-    "date": "2023-08-22",
-    "image": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400"
+    "title": "Problem Solving(basic)",
+    "issuer": "HackerRank",
+    "date": "27-05-2025",
+    "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754377574/Screenshot_2025-08-05_123516_y1i5hh.png"
+  },
+  {
+    "id": 4,
+    "title": "Github Copilot Fundamentals",
+    "issuer": "Microsoft",
+    "date": "26-05-2025",
+    "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754377576/Screenshot_2025-08-05_123500_rzkglw.png"
+  },
+  {
+    "id": 5,
+    "title": "JavaScript(basic)",
+    "issuer": "HackerRank",
+    "date": "24-06-2025",
+    "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754377574/Screenshot_2025-08-05_123528_t08yow.png"
   }
 ]

@@ -1,32 +1,32 @@
 [
-  {
-    "id": 1,
-    "title": "E-Commerce Platform",
-    "description": "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
-    "thumbnail": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "techStack": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    "createdDate": "2024-01-15",
-    "liveDemo": "https://example.com",
-    "github": "https://github.com/example/ecommerce"
-  },
-  {
-    "id": 2,
-    "title": "Task Management App",
-    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    "thumbnail": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "techStack": ["React", "Firebase", "Material-UI", "Socket.io"],
-    "createdDate": "2023-11-20",
-    "liveDemo": "https://example.com",
-    "github": "https://github.com/example/taskapp"
-  },
-  {
-    "id": 3,
-    "title": "Weather Dashboard",
-    "description": "A responsive weather dashboard with location-based forecasts, interactive charts, and weather alerts using OpenWeather API.",
-    "thumbnail": "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "techStack": ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-    "createdDate": "2023-09-10",
-    "liveDemo": "https://example.com",
-    "github": "https://github.com/example/weather"
-  }
+ {
+  "id": 1,
+  "title": "Skill Scheduler",
+  "description": "A productivity-focused full-stack web application designed to help students manage their study routines efficiently. Built with React, Node.js, and MongoDB, it allows users to create personalized schedules, set goals, manage tasks and exams, track progress, store categorized notes, and generate subject-wise quizzes.",
+  "thumbnail": "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "techStack": ["React", "Node.js", "Express", "MongoDB", "CSS"],
+  "createdDate": "2024-03-10",
+  "liveDemo": "https://skill-scheduler-2.onrender.com/",
+  "github": "https://github.com/ishitatrivedi-dell/skill_scheduler"
+},
+{
+  "id": 2,
+  "title": "NST Static Website",
+  "description": "A responsive static website built with HTML and CSS, showcasing clean layout design and user-friendly interface. Ideal for beginner-level web projects or static landing pages.",
+  "thumbnail": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "techStack": ["HTML", "CSS"],
+  "createdDate": "2024-02-05",
+  "liveDemo": "https://ishitatrivedi-dell.github.io/nst",
+  "github": "https://github.com/ishitatrivedi-dell/nst"
+},
+ {
+  "id": 3,
+  "title": "Shyara Gold Admin Panel",
+  "description": "An admin panel system built with MERN stack to manage store owners and track store performance. Features include role-based access control (RBAC) for Super Admins and Store Managers, store listing, owner management, and secure authentication.",
+  "thumbnail": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "techStack": ["React", "Node.js", "Express", "MongoDB", "CSS"],
+  "createdDate": "2025-03-15",
+  "liveDemo": "https://shyara-gold.onrender.com",
+  "github": "https://github.com/ishitatrivedi-dell/shyara_gold"
+}
 ]

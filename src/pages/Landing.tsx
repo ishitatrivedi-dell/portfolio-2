@@ -33,7 +33,6 @@ const Landing = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-2xl md:text-3xl text-gray-300 font-light"
             >
-              <span className="typewriter">Full Stack Developer</span>
             </motion.div>
           </div>
 
