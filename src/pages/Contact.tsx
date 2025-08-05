@@ -17,11 +17,26 @@ const Contact = () => {
     reset
   } = useForm<ContactForm>();
 
-  const onSubmit = (data: ContactForm) => {
-    console.log('Form data:', data);
-    // Handle form submission here
-    alert('Message sent successfully!');
-    reset();
+  const onSubmit = async (data: ContactForm) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mrbpjqkg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        reset();
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   const socialLinks = [

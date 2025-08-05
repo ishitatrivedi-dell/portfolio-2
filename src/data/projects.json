@@ -4,7 +4,7 @@
   "title": "Skill Scheduler",
   "description": "A productivity-focused full-stack web application designed to help students manage their study routines efficiently. Built with React, Node.js, and MongoDB, it allows users to create personalized schedules, set goals, manage tasks and exams, track progress, store categorized notes, and generate subject-wise quizzes.",
   "thumbnail": "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "techStack": ["React", "Node.js", "Express", "MongoDB", "CSS"],
+  "techStack": ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
   "createdDate": "2024-03-10",
   "liveDemo": "https://skill-scheduler-2.onrender.com/",
   "github": "https://github.com/ishitatrivedi-dell/skill_scheduler"
