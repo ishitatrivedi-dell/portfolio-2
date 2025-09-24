@@ -63,7 +63,7 @@ const Landing = () => {
                 className="flex items-center justify-center px-8 py-3 glass border border-gray-600 text-gray-300 rounded-xl hover:border-gray-500 transition-colors"
               >
                 <Download size={18} className="mr-2" />
-                Download Resume
+                <a href="https://drive.google.com/file/d/1jyl0cNftPz6UQym7I13_duCdB7eY2-gP/view?usp=drive_link">Get Resume</a>
               </motion.button>
             </div>
           </motion.div>

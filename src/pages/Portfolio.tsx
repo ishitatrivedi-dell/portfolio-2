@@ -83,7 +83,7 @@ const Portfolio = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-2">
-                  {project.techStack.slice(0, 3).map((tech, techIndex) => (
+                  {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs border border-orange-500/30"
