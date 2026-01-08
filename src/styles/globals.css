@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --accent-color: #D96846;
-  --background-color: #2F3020;
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --primary-color: #F59E0B;
+  --primary-dark: #D97706;
+  --primary-light: #FCD34D;
+  --secondary-color: #FBBF24;
+  --accent-color: #F59E0B;
+  --dark-color: #000000;
+  --dark-light: #1a1a1a;
+  --glass-bg: rgba(0, 0, 0, 0.8);
+  --glass-border: rgba(245, 158, 11, 0.3);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +23,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  background: var(--background-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--dark-color);
   color: white;
   overflow-x: hidden;
 }
@@ -29,10 +37,14 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #D96846, #ff8a65);
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
 }
 
 .dock-shadow {
@@ -50,7 +62,7 @@ body {
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.15em solid #D96846;
+  border-right: 0.15em solid var(--primary-color);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.05em;
@@ -63,4 +75,35 @@ body {
 
 .scrollbar-hidden {
   scrollbar-width: none;
-}   
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary-color);
+  color: var(--dark-color);
+}
+
+/* Focus styles */
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

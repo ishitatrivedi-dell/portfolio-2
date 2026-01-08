@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "title": "STL Introduction",
+    "description": "Introduction to Standard Template Library in C++",
+    "url": "https://www.youtube.com/embed/TuS7TvPlgm0",
+    "thumbnail": "https://img.youtube.com/vi/TuS7TvPlgm0/maxresdefault.jpg",
+    "category": "STL Basics"
+  },
+  {
+    "id": 2,
+    "title": "Vectors in STL",
+    "description": "Complete guide to using vectors in C++ STL",
+    "url": "https://www.youtube.com/embed/C_mHMsIp-Fo",
+    "thumbnail": "https://img.youtube.com/vi/C_mHMsIp-Fo/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 3,
+    "title": "Iterators in STL",
+    "description": "Understanding iterators and their usage in STL",
+    "url": "https://www.youtube.com/embed/6kiboEnWrkI",
+    "thumbnail": "https://img.youtube.com/vi/6kiboEnWrkI/maxresdefault.jpg",
+    "category": "Iterators"
+  },
+  {
+    "id": 4,
+    "title": "Lists in STL",
+    "description": "Working with list containers in C++ STL",
+    "url": "https://www.youtube.com/embed/gE49GNtQa4M",
+    "thumbnail": "https://img.youtube.com/vi/gE49GNtQa4M/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 5,
+    "title": "Stacks and Queues",
+    "description": "Understanding stack and queue containers in STL",
+    "url": "https://www.youtube.com/embed/UAGuJfWfSSE",
+    "thumbnail": "https://img.youtube.com/vi/UAGuJfWfSSE/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 6,
+    "title": "Priority Queue",
+    "description": "Complete guide to priority queue in C++ STL",
+    "url": "https://www.youtube.com/embed/l3z5oYMDYrA",
+    "thumbnail": "https://img.youtube.com/vi/l3z5oYMDYrA/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 7,
+    "title": "Sets in STL",
+    "description": "Understanding set containers and their operations",
+    "url": "https://www.youtube.com/embed/pcSIKJjP2yU",
+    "thumbnail": "https://img.youtube.com/vi/pcSIKJjP2yU/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 8,
+    "title": "Maps in STL",
+    "description": "Complete guide to map containers in C++ STL",
+    "url": "https://www.youtube.com/embed/aWKfIaoTtRY",
+    "thumbnail": "https://img.youtube.com/vi/aWKfIaoTtRY/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 9,
+    "title": "Unordered Maps",
+    "description": "Understanding unordered maps and their performance",
+    "url": "https://www.youtube.com/embed/1XLbT-MGYvs",
+    "thumbnail": "https://img.youtube.com/vi/1XLbT-MGYvs/maxresdefault.jpg",
+    "category": "Containers"
+  },
+  {
+    "id": 10,
+    "title": "Algorithms Overview",
+    "description": "Introduction to STL algorithms library",
+    "url": "https://www.youtube.com/embed/KpTSGgIaBUo",
+    "thumbnail": "https://img.youtube.com/vi/KpTSGgIaBUo/maxresdefault.jpg",
+    "category": "Algorithms"
+  },
+  {
+    "id": 11,
+    "title": "Sorting Algorithms",
+    "description": "Understanding sort functions in STL",
+    "url": "https://www.youtube.com/embed/Gw_aIK5Cq2s",
+    "thumbnail": "https://img.youtube.com/vi/Gw_aIK5Cq2s/maxresdefault.jpg",
+    "category": "Algorithms"
+  },
+  {
+    "id": 12,
+    "title": "Binary Search",
+    "description": "Using binary search algorithms in STL",
+    "url": "https://www.youtube.com/embed/WKGp99Uku8E",
+    "thumbnail": "https://img.youtube.com/vi/WKGp99Uku8E/maxresdefault.jpg",
+    "category": "Algorithms"
+  },
+  {
+    "id": 13,
+    "title": "String Operations",
+    "description": "String manipulation using STL",
+    "url": "https://www.youtube.com/embed/E8SYPNGk-rA",
+    "thumbnail": "https://img.youtube.com/vi/E8SYPNGk-rA/maxresdefault.jpg",
+    "category": "Strings"
+  },
+  {
+    "id": 14,
+    "title": "Pair and Tuple",
+    "description": "Understanding pair and tuple utilities in STL",
+    "url": "https://www.youtube.com/embed/sUkrrJjwyx0",
+    "thumbnail": "https://img.youtube.com/vi/sUkrrJjwyx0/maxresdefault.jpg",
+    "category": "Utilities"
+  },
+  {
+    "id": 15,
+    "title": "Advanced STL Features",
+    "description": "Advanced features and best practices in STL",
+    "url": "https://www.youtube.com/embed/oy-gvXjJSAc",
+    "thumbnail": "https://img.youtube.com/vi/oy-gvXjJSAc/maxresdefault.jpg",
+    "category": "Advanced"
+  },
+  {
+    "id": 16,
+    "title": "STL Performance",
+    "description": "Performance considerations and optimizations in STL",
+    "url": "https://www.youtube.com/embed/rhXV5uwm1uU",
+    "thumbnail": "https://img.youtube.com/vi/rhXV5uwm1uU/maxresdefault.jpg",
+    "category": "Performance"
+  },
+  {
+    "id": 17,
+    "title": "STL Best Practices",
+    "description": "Best practices and common patterns in STL usage",
+    "url": "https://www.youtube.com/embed/xL563gG6C8M",
+    "thumbnail": "https://img.youtube.com/vi/xL563gG6C8M/maxresdefault.jpg",
+    "category": "Best Practices"
+  },
+  {
+    "id": 18,
+    "title": "STL Templates",
+    "description": "Understanding template programming in STL",
+    "url": "https://www.youtube.com/embed/MVVhohQ-yiw",
+    "thumbnail": "https://img.youtube.com/vi/MVVhohQ-yiw/maxresdefault.jpg",
+    "category": "Templates"
+  },
+  {
+    "id": 19,
+    "title": "STL Error Handling",
+    "description": "Error handling and debugging in STL",
+    "url": "https://www.youtube.com/embed/MjmABjccjWY",
+    "thumbnail": "https://img.youtube.com/vi/MjmABjccjWY/maxresdefault.jpg",
+    "category": "Debugging"
+  }
+]

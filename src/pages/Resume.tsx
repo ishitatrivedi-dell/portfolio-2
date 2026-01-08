@@ -43,7 +43,7 @@ const Resume = () => {
   };
 
   return (
-    <section id="resume" className="min-h-screen py-20 px-4">
+    <div className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -58,6 +58,7 @@ const Resume = () => {
             My educational background and professional certifications
           </p>
         </motion.div>
+
 
         {/* Education Section */}
         <div className="mb-16">
@@ -173,7 +174,7 @@ const Resume = () => {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

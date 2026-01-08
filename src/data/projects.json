@@ -28,5 +28,17 @@
   "createdDate": "2025-03-15",
   "liveDemo": "https://shyara-gold.onrender.com",
   "github": "https://github.com/ishitatrivedi-dell/shyara_gold"
+},{
+  
+  "id": 4,
+  "title": "CampusEvents Pro – Event & Finance Management Platform",
+  "description": "A college-focused event management platform built with the MERN stack to manage events end-to-end. Features include event creation and lifecycle management, participant registrations, hackathon team formation, role-based access control (RBAC), integrated budgeting and expense approval workflows, automated certificate generation, and downloadable financial reports.",
+  "thumbnail": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "techStack": ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+  "createdDate": "2025-04-10",
+  "liveDemo": "Coming Soon , in Progress",
+  "github": "https://github.com/ishitatrivedi-dell/Event-mang"
+
+
 }
 ]

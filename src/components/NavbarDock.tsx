@@ -1,51 +1,61 @@
 import { motion } from 'framer-motion';
 import { Home, Briefcase, FileText, Mail } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 interface DockItem {
   icon: React.ReactNode;
   label: string;
-  href: string;
+  to: string;
 }
 
 const dockItems: DockItem[] = [
-  { icon: <Home size={24} />, label: 'Home', href: '#home' },
-  { icon: <Briefcase size={24} />, label: 'Portfolio', href: '#portfolio' },
-  { icon: <FileText size={24} />, label: 'Resume', href: '#resume' },
-  { icon: <Mail size={24} />, label: 'Contact', href: '#contact' },
+  { icon: <Home size={24} />, label: 'Home', to: '#home' },
+  { icon: <Briefcase size={24} />, label: 'Projects', to: '#projects' },
+  { icon: <FileText size={24} />, label: 'Resume', to: '#resume' },
+  { icon: <Mail size={24} />, label: 'Contact', to: '#contact' },
 ];
 
 const NavbarDock = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const location = useLocation();
 
-  const handleClick = (index: number, href: string) => {
-    setActiveIndex(index);
-    const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => {
+    const hash = location.hash.replace('#', '') || 'home';
+    const idx = dockItems.findIndex((item) => item.to === `#${hash}`);
+    setActiveIndex(idx === -1 ? 0 : idx);
+  }, [location.hash]);
+
+  const navigateToSection = (to: string) => {
+    const sectionId = to.replace('#', '');
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ x: -100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{ delay: 1.5, duration: 0.5 }}
-      className="fixed bottom-6 left-0 right-0 flex justify-center z-40"
+      className="fixed left-6 top-1/2 transform -translate-y-1/2 z-40"
     >
-      <div className="glass dock-shadow px-4 py-3 rounded-2xl max-w-md w-fit mx-4">
-        <div className="flex items-center justify-center space-x-2">
+      <div className="glass dock-shadow px-3 py-4 rounded-2xl">
+        <div className="flex flex-col items-center space-y-2">
           {dockItems.map((item, index) => (
             <motion.button
               key={index}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
-              onClick={() => handleClick(index, item.href)}
-              whileHover={{ scale: 1.2, y: -8 }}
+              onClick={() => navigateToSection(item.to)}
+              whileHover={{ scale: 1.2, x: 8 }}
               whileTap={{ scale: 0.95 }}
               className={`relative p-3 rounded-xl transition-all duration-200 ${
                 activeIndex === index
-                  ? 'bg-white/20 text-white'
-                  : 'text-gray-300 hover:text-white'
+                  ? 'bg-primary/20 text-primary-light border border-primary/40'
+                  : 'text-gray hover:text-primary-light'
               }`}
             >
               {item.icon}
@@ -53,12 +63,12 @@ const NavbarDock = () => {
               {/* Tooltip */}
               {hoveredIndex === index && (
                 <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  className="absolute -top-12 left-1/2 transform -translate-x-1/2"
+                  initial={{ opacity: 0, x: 10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 10 }}
+                  className="absolute left-16 top-1/2 transform -translate-y-1/2"
                 >
-                  <div className="glass px-2 py-1 rounded-lg text-sm whitespace-nowrap">
+                  <div className="glass px-3 py-1 rounded-lg text-sm whitespace-nowrap font-medium">
                     {item.label}
                   </div>
                 </motion.div>
@@ -68,7 +78,7 @@ const NavbarDock = () => {
               {activeIndex === index && (
                 <motion.div
                   layoutId="activeIndicator"
-                  className="absolute -bottom-1 left-1/2 w-1 h-1 bg-orange-500 rounded-full transform -translate-x-1/2"
+                  className="absolute -right-1 top-1/2 w-1 h-1 bg-primary rounded-full transform -translate-y-1/2"
                 />
               )}
             </motion.button>

@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Routes, Route } from 'react-router-dom';
 import Loader from './components/Loader';
 import NavbarDock from './components/NavbarDock';
-import Landing from './pages/Landing';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import Home from './pages/Home';
 import './styles/globals.css';
 
 function App() {
@@ -33,12 +31,11 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Landing />
-            <Portfolio />
-            <Resume />
-            <Contact />
+            <Routes>
+              <Route path="/*" element={<Home />} />
+            </Routes>
           </motion.div>
-          
+
           <NavbarDock />
         </>
       )}
