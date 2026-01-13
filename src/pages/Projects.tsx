@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import ModalProject from '../components/ModalProject';
+import projectsData from '../data/projects.json';
+
 
 interface Project {
   id: number;
@@ -37,9 +39,7 @@ const Projects = () => {
   const [hoveredVideo, setHoveredVideo] = useState<number | null>(null);
 
   useEffect(() => {
-    import('../data/projects.json').then((data) => {
-      setProjects(data.default);
-    });
+    setProjects(projectsData.value);
     import('../data/videos.json').then((data) => {
       setVideos(data.default);
     });

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 5,
+    "title": "Expense Tracker",
+    "description": "Built a scalable E-commerce backend using Node.js, Express, and MongoDB with JWT authentication, role-based access, product management, orders, payments, and user engagement features.",
+    "thumbnail": "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768245371/Screenshot_2026-01-13_003652_dni8se.png",
+    "techStack": ["Node.js", "Express.js", "MongoDB"],
+    "createdDate": "2025-09-06",
+    "liveDemo": "https://youtu.be/HSqMKP2mD6c?si=2c-lHKN5hffQ37Jt",
+    "github": "https://github.com/ishitatrivedi-dell/Odoo-VirtualRound-6-sep"
+  },
+  {
+     "id":  6,
+                      "title":  "GlobeTrotter - Personalized Travel Planner",
+                      "description":  "GlobeTrotter is a comprehensive travel planning platform that helps users create personalized trip itineraries, manage travel budgets, and share their adventures. Built with a modern tech stack, it offers a feature-rich experience for travel enthusiasts.",
+                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768245372/Screenshot_2026-01-13_004053_khqfme.png",
+                      "techStack":  [
+                                        "React",
+                                        "Node.js",
+                                        "Express",
+                                        "MongoDB"
+                                    ],
+                      "createdDate":  "2025-10-12",
+                      "liveDemo":  "https://youtu.be/QLRdSAYtyYY?si=qZs8OY_-8b0hjOtT",
+                      "github":  "https://github.com/ishitatrivedi-dell/odoo-hackathone-round2"
+  },
+   {
+                      "id":  7,
+                      "title":  "LifeDoc",
+                      "description":  "Healthcare Management System For Aged People",
+                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768245371/Screenshot_2026-01-13_003502_oh8nea.png",
+                      "techStack":  [
+                                        "Next.js",
+                                        "React",
+                                        "TypeScript",
+                                        "Redux Toolkit",
+                                        "Tailwind CSS",
+                                        "Axios",
+                                        "Recharts",
+                                        "Node.js",
+                                        "Express.js",
+                                        "MongoDB",
+                                        "Mongoose",
+                                        "Google Gemini AI",
+                                        "OpenAI",
+                                        "JWT",
+                                        "Bcrypt",
+                                        "Cloudinary",
+                                        "Nodemailer",
+                                        "Twilio",
+                                        "Stripe",
+                                        "Node-Cron"
+                                    ],
+                      "createdDate":  "2026-01-11",
+                      "liveDemo":  "Coming Soon ",
+                      "github":  "https://github.com/ishitatrivedi-dell/odoo-hackathone-round2"
+                  }
+]

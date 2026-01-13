@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Home, Briefcase, FileText, Mail } from 'lucide-react';
+import { Home, Briefcase, FileText, Mail, Code, Trophy } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -11,7 +11,9 @@ interface DockItem {
 
 const dockItems: DockItem[] = [
   { icon: <Home size={24} />, label: 'Home', to: '#home' },
+  { icon: <Code size={24} />, label: 'Skills', to: '#skills' },
   { icon: <Briefcase size={24} />, label: 'Projects', to: '#projects' },
+  { icon: <Trophy size={24} />, label: 'Hackathons', to: '#hackathons' },
   { icon: <FileText size={24} />, label: 'Resume', to: '#resume' },
   { icon: <Mail size={24} />, label: 'Contact', to: '#contact' },
 ];
