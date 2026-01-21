@@ -36,7 +36,16 @@ const Home = () => {
     
     const element = document.getElementById(hash);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80; // Offset for fixed header/navbar
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 100); // Small delay to ensure DOM is ready
     }
   }, [location]);
 
@@ -76,7 +85,14 @@ const Home = () => {
   const goToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80; // Offset for fixed header/navbar
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -350,6 +366,7 @@ const Home = () => {
                 transition={{ delay: 0.8, duration: 1 }}
                 className="space-y-8"
               >
+               
                 
                 {/* Skills Grid */}
                 <div className="glass rounded-2xl p-6 border border-primary/20">
@@ -437,6 +454,40 @@ const Home = () => {
               >
                 <Mail size={24} />
               </motion.a>
+            </motion.div>
+
+            {/* Decorative Image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ delay: 1.8, duration: 0.8, type: "spring" }}
+              className="absolute -right-8 top-4 w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 opacity-80"
+            >
+              <motion.div
+                animate={{
+                  y: [0, -10, 0],
+                  rotate: [0, 5, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="w-full h-full rounded-2xl overflow-hidden shadow-xl shadow-primary/20 border-2 border-primary/30"
+              >
+                <img
+                  src="/decorative-image.jpg" // Replace with your actual image path
+                  alt="Decorative element"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to a gradient if image doesn't load
+                    e.currentTarget.style.display = 'none';
+                    if (e.currentTarget.parentElement) {
+                      e.currentTarget.parentElement.style.background = 'linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(251, 191, 36, 0.1))';
+                    }
+                  }}
+                />
+              </motion.div>
             </motion.div>
           </motion.div>
 

@@ -34,7 +34,14 @@ const NavbarDock = () => {
     const sectionId = to.replace('#', '');
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80; // Offset for fixed header/navbar
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
       setIsMobileMenuOpen(false); // Close mobile menu after navigation
     }
   };

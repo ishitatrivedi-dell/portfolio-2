@@ -33,7 +33,7 @@
                       "id":  3,
                       "title":  "CampusEvents Pro – Event \u0026 Finance Management Platform",
                       "description":  "A college-focused event management platform built with the MERN stack to manage events end-to-end. Features include event creation and lifecycle management, participant registrations, hackathon team formation, role-based access control (RBAC), integrated budgeting and expense approval workflows, automated certificate generation, and downloadable financial reports.",
-                      "thumbnail":  "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=800",
+                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768987407/Screenshot_2026-01-21_145133_ipceae.png",
                       "techStack":  [
                                         "React",
                                         "Tailwind CSS",
