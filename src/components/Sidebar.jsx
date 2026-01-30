@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
-import { User, Mail, Code, Globe } from 'lucide-react';
+import { 
+  
+  Mail, Code, Globe } from 'lucide-react';
 
 const Sidebar = () => {
   // Typewriter animation variants for name

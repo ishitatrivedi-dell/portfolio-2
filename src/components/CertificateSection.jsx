@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, Variants, easeInOut } from "framer-motion";
 import { Award, ChevronLeft, ChevronRight, X } from "lucide-react";
 
-const CertificationsSection = ({ certificates }: { certificates: any[] }) => {
+const CertificationsSection = ({ certificates }) => {
   const [currentCertIndex, setCurrentCertIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -22,16 +22,16 @@ const CertificationsSection = ({ certificates }: { certificates: any[] }) => {
   const closeModal = () => setIsModalOpen(false);
 
   // ✅ Typed variants
-  const cardVariants: Variants = {
+  const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" as any }, // TS-safe
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
-  const modalVariants: Variants = {
+  const modalVariants = {
     hidden: { scale: 0.8, opacity: 0 },
     visible: {
       scale: 1,
@@ -58,7 +58,7 @@ const CertificationsSection = ({ certificates }: { certificates: any[] }) => {
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" as any }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex items-center mb-12 max-w-4xl mx-auto"
       >
         <Award size={48} className="text-yellow-300 mr-6" strokeWidth={1.5} />

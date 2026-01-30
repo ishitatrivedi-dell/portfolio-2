@@ -100,87 +100,49 @@ const Home = () => {
     <div className="scroll-smooth">
       {/* Home Section */}
       <section id="home" className="min-h-screen bg-dark text-white flex items-center justify-center px-4 relative overflow-hidden">
-        {/* 3D Background Effects */}
+        {/* 3D Background Effects - Simplified */}
         <div className="absolute inset-0">
-          {/* Floating Geometric Shapes */}
+          {/* Reduced floating shapes from 3 to 2 */}
           <motion.div
             animate={{
-              rotateY: [0, 360],
-              rotateZ: [0, 180],
-              x: [-100, 100, -100],
-              y: [-50, 50, -50],
+              y: [-20, 20, -20],
             }}
             transition={{
-              duration: 20,
+              duration: 8,
               repeat: Infinity,
-              ease: "linear"
+              ease: "easeInOut"
             }}
-            className="absolute top-20 left-20 w-32 h-32"
-            style={{
-              transformStyle: 'preserve-3d',
-              perspective: '1000px'
-            }}
+            className="absolute top-20 left-20 w-24 h-24"
           >
-            <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/10 border border-primary/30 rounded-lg backdrop-blur-sm"></div>
+            <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-lg backdrop-blur-sm"></div>
           </motion.div>
 
           <motion.div
             animate={{
-              rotateX: [0, 360],
-              rotateY: [0, -180],
-              x: [100, -100, 100],
-              y: [50, -50, 50],
+              y: [20, -20, 20],
             }}
             transition={{
-              duration: 25,
+              duration: 10,
               repeat: Infinity,
-              ease: "linear"
+              ease: "easeInOut"
             }}
-            className="absolute top-40 right-32 w-24 h-24"
-            style={{
-              transformStyle: 'preserve-3d',
-              perspective: '1000px'
-            }}
+            className="absolute bottom-32 right-20 w-32 h-32"
           >
-            <div className="w-full h-full bg-gradient-to-tr from-yellow-500/20 to-orange-500/10 border border-yellow-500/30 rounded-full backdrop-blur-sm"></div>
+            <div className="w-full h-full bg-gradient-to-bl from-amber-500/10 to-yellow-500/5 border border-amber-500/20 rounded-full backdrop-blur-sm"></div>
           </motion.div>
 
-          <motion.div
-            animate={{
-              rotateZ: [0, 360],
-              rotateX: [0, 180],
-              x: [-80, 80, -80],
-              y: [80, -80, 80],
-            }}
-            transition={{
-              duration: 30,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="absolute bottom-32 left-40 w-40 h-40"
-            style={{
-              transformStyle: 'preserve-3d',
-              perspective: '1000px'
-            }}
-          >
-            <div className="w-full h-full bg-gradient-to-bl from-amber-500/20 to-yellow-500/10 border border-amber-500/30 backdrop-blur-sm" 
-                 style={{ clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)' }}></div>
-          </motion.div>
-
-          {/* Particle System */}
-          {[...Array(20)].map((_, i) => (
+          {/* Reduced particles from 20 to 8 */}
+          {[...Array(8)].map((_, i) => (
             <motion.div
               key={`particle-${i}`}
               animate={{
-                y: [Math.random() * -100, Math.random() * 100],
-                x: [Math.random() * -50, Math.random() * 50],
-                opacity: [0, 1, 0],
-                scale: [0, 1, 0],
+                y: [Math.random() * -50, Math.random() * 50],
+                opacity: [0, 0.5, 0],
               }}
               transition={{
-                duration: Math.random() * 5 + 5,
+                duration: Math.random() * 8 + 4,
                 repeat: Infinity,
-                delay: Math.random() * 5,
+                delay: Math.random() * 3,
                 ease: "easeInOut"
               }}
               className="absolute w-1 h-1 bg-primary rounded-full"
@@ -191,83 +153,8 @@ const Home = () => {
             />
           ))}
 
-          {/* Grid Lines with 3D Perspective */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="h-full w-full" style={{
-              backgroundImage: `
-                linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px),
-                linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px',
-              transform: 'rotateX(45deg) translateZ(-100px)',
-              transformStyle: 'preserve-3d'
-            }}></div>
-          </div>
-
-          {/* Depth Layers */}
-          <motion.div
-            animate={{
-              scale: [1, 1.1, 1],
-              opacity: [0.1, 0.2, 0.1],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-yellow-500/5"
-          />
-
-          <motion.div
-            animate={{
-              scale: [1.1, 1, 1.1],
-              opacity: [0.05, 0.1, 0.05],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute inset-0 bg-gradient-to-tl from-amber-500/5 via-transparent to-yellow-500/5"
-          />
-
-          {/* Orbital Elements */}
-          <motion.div
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{
-              duration: 15,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2"
-            style={{
-              transformStyle: 'preserve-3d',
-            }}
-          >
-            {[...Array(6)].map((_, i) => (
-              <motion.div
-                key={`orbit-${i}`}
-                className="absolute w-3 h-3 bg-primary rounded-full"
-                style={{
-                  top: '50%',
-                  left: '50%',
-                  transform: `rotate(${i * 60}deg) translateX(250px) translateY(-50%)`,
-                }}
-                animate={{
-                  scale: [1, 1.5, 1],
-                  opacity: [0.3, 0.8, 0.3],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  delay: i * 0.2,
-                  ease: "easeInOut"
-                }}
-              />
-            ))}
-          </motion.div>
+          {/* Simplified depth layers - removed animations */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-yellow-500/3" />
         </div>
 
         {/* Background Pattern */}

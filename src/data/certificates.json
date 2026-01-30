@@ -33,5 +33,12 @@
     "issuer": "HackerRank",
     "date": "24-06-2025",
     "image": "https://res.cloudinary.com/dliataxzf/image/upload/v1754376678/Screenshot_2025-06-09_115856_k37h32.png"
+  },
+  {
+    "id": 6,
+    "title": "JavaScript(intermediate)",
+    "issuer": "HackerRank",
+    "date": "30-01-2025",
+    "image": "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769755579/Screenshot_2026-01-30_121603_r85zvc.png"
   }
 ]

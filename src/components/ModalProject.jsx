@@ -1,24 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, Github, Calendar } from 'lucide-react';
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  thumbnail: string;
-  techStack: string[];
-  createdDate: string;
-  liveDemo: string;
-  github: string;
-}
-
-interface ModalProjectProps {
-  project: Project | null;
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-const ModalProject = ({ project, isOpen, onClose }: ModalProjectProps) => {
+const ModalProject = ({ project, isOpen, onClose }) => {
   if (!project) return null;
 
   return (
