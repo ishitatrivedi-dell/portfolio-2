@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Mail, Github, Linkedin, Twitter, Send, MapPin, Phone, Briefcase, Clock, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Contact = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -41,8 +47,8 @@ const Contact = () => {
     {
       icon: <Phone size={20} />,
       label: "Phone",
-      value: "+91 XXXXX XXXXX",
-      href: "tel:+91XXXXXXXXXX"
+      value: "+91 8883600026",
+      href: "tel:+918883600026"
     },
     {
       icon: <MapPin size={20} />,
@@ -92,33 +98,33 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-dark text-white px-4 py-20">
+    <div className="min-h-screen bg-dark text-white px-4 pt-8 pb-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-8"
         >
-          <h1 className="text-5xl font-bold mb-4 font-heading">
+          <h1 className="text-4xl font-bold mb-3 font-heading">
             Let's <span className="gradient-text">Connect</span>
           </h1>
-          <p className="text-xl text-gray-light max-w-3xl mx-auto font-body">
+          <p className="text-lg text-gray-light max-w-2xl mx-auto font-body">
             I'm always excited to discuss new opportunities, collaborations, or just chat about technology and innovation.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-8">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-2"
           >
-            <div className="glass rounded-2xl p-8 border border-primary/20">
-              <h2 className="text-3xl font-bold text-white mb-6 font-heading">
+            <div className="glass rounded-2xl p-6 border border-primary/20">
+              <h2 className="text-2xl font-bold text-white mb-4 font-heading">
                 Send Me a Message
               </h2>
               
@@ -132,7 +138,7 @@ const Contact = () => {
                       {...register("name", { required: "Name is required" })}
                       type="text"
                       className="w-full px-4 py-3 bg-dark-light border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-primary-light transition-colors"
-                      placeholder="John Doe"
+                      placeholder="Your Name "
                     />
                     {errors.name && (
                       <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>
@@ -153,7 +159,7 @@ const Contact = () => {
                       })}
                       type="email"
                       className="w-full px-4 py-3 bg-dark-light border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-primary-light transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="me@example.com"
                     />
                     {errors.email && (
                       <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>
@@ -213,14 +219,14 @@ const Contact = () => {
 
           {/* Contact Info & Benefits */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="space-y-8"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-6"
           >
             {/* Contact Information */}
-            <div className="glass rounded-2xl p-8 border border-primary/20">
-              <h3 className="text-2xl font-bold text-white mb-6 font-heading">
+            <div className="glass rounded-2xl p-6 border border-primary/20">
+              <h3 className="text-xl font-bold text-white mb-4 font-heading">
                 Contact Information
               </h3>
               
@@ -264,18 +270,18 @@ const Contact = () => {
             </div>
 
             {/* Why Contact Me */}
-            <div className="glass rounded-2xl p-8 border border-primary/20">
-              <h3 className="text-2xl font-bold text-white mb-6 font-heading">
+            <div className="glass rounded-2xl p-6 border border-primary/20">
+              <h3 className="text-xl font-bold text-white mb-4 font-heading">
                 Why Work With Me?
               </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                     className="flex gap-4"
                   >
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center text-primary-light flex-shrink-0">
@@ -295,17 +301,17 @@ const Contact = () => {
             </div>
 
             {/* Availability */}
-            <div className="glass rounded-2xl p-6 border border-primary/20">
-              <div className="flex items-center gap-3 mb-3">
-                <Clock size={20} className="text-primary-light" />
-                <h4 className="text-lg font-semibold text-white">Availability</h4>
+            <div className="glass rounded-2xl p-4 border border-primary/20">
+              <div className="flex items-center gap-3 mb-2">
+                <Clock size={18} className="text-primary-light" />
+                <h4 className="text-base font-semibold text-white">Availability</h4>
               </div>
-              <p className="text-sm text-gray-light mb-3">
+              <p className="text-xs text-gray-light mb-2">
                 Currently open to new opportunities and collaborations
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-green-400 text-sm font-medium">Available for work</span>
+                <span className="text-green-400 text-xs font-medium">Available for work</span>
               </div>
             </div>
           </motion.div>
@@ -313,10 +319,10 @@ const Contact = () => {
 
         {/* CTA Section */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-8"
         >
           <div className="glass rounded-2xl p-8 border border-primary/20 text-center">
             <h2 className="text-3xl font-bold text-white mb-4 font-heading">

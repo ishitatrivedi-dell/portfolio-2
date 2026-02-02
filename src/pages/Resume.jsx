@@ -229,14 +229,7 @@ const Resume = () => {
                       {certificates[currentCertIndex]?.issuer}
                     </p>
                     
-                    <div className="flex items-center justify-center text-gray-light">
-                      <Calendar size={16} className="mr-2" />
-                      Issued: {new Date(certificates[currentCertIndex]?.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
-                    </div>
+                    
                   </motion.div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { ExternalLink, Github, Figma, Code, Copy } from 'lucide-react';
+import { ExternalLink, Github, Figma, Code, Copy, Trophy } from 'lucide-react';
 import ModalProject from '../components/ModalProject.jsx';
 import projectsData from '../data/projects.json';
 
@@ -14,22 +14,52 @@ const Projects = () => {
   const figmaProjects = [
     {
       id: 101,
-      title: "E-commerce App Design",
-      description: "Modern e-commerce mobile app UI/UX design with seamless user experience",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=Figma+Design",
-      techStack: ["Figma", "UI/UX", "Prototyping"],
+      title: "Boodoo - Astrology & Horoscope",
+      description: "Comprehensive astrology and horoscope community app design with modern UI/UX",
+      thumbnail: "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769839300/Screenshot_2026-01-31_113042_aoqhi2.png",
+      techStack: ["Figma", "UI/UX", "Mobile Design", "Community Features"],
       createdDate: "2024-01-15",
-      liveDemo: "https://figma.com/file/example",
+      liveDemo: "https://www.figma.com/design/6tzjVrrUbkcKMXstLEwVHI/Boodoo---Astrology---Horoscope--Community-?node-id=0-1&t=q7jAbtyD2IN3WGM2-1",
       github: ""
     },
     {
       id: 102,
-      title: "Dashboard Redesign",
-      description: "Analytics dashboard redesign with improved data visualization",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=Dashboard",
-      techStack: ["Figma", "Design Systems", "User Research"],
+      title: "Skills Scheduler",
+      description: "Professional skills scheduling and management application with intuitive interface",
+      thumbnail: "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769839336/Screenshot_2026-01-31_113202_owcbka.png",
+      techStack: ["Figma", "UI/UX", "Productivity", "Scheduling"],
       createdDate: "2024-02-20",
-      liveDemo: "https://figma.com/file/dashboard",
+      liveDemo: "https://www.figma.com/design/1PDr2aGXQJMBxMr5OSgDRF/Skills-Schedular?node-id=0-1&t=AS6iY27sfpXA1RZU-1",
+      github: ""
+    },
+    {
+      id: 103,
+      title: "Learning App",
+      description: "Educational learning platform design with engaging user experience and modern aesthetics",
+      thumbnail: "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769839367/Screenshot_2026-01-31_113235_p8honj.png",
+      techStack: ["Figma", "UI/UX", "Education", "Mobile Design"],
+      createdDate: "2024-03-10",
+      liveDemo: "https://www.figma.com/design/zFLRIgR7VtGg7h13rDXNTl/learning-app?node-id=0-1&t=beCSmoBKIywjHvWf-1",
+      github: ""
+    },
+    {
+      id: 104,
+      title: "Netflix Clone Design",
+      description: "Netflix streaming platform clone design with modern UI and user experience patterns",
+      thumbnail: "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769839397/Screenshot_2026-01-31_113304_kuoog2.png",
+      techStack: ["Figma", "UI/UX", "Streaming", "Entertainment"],
+      createdDate: "2024-04-05",
+      liveDemo: "https://www.figma.com/design/wJb1h7bgafI1s3GMHYgmLT/Untitled?node-id=0-1&t=p5QUv1JlY36nKbhz-1",
+      github: ""
+    },
+    {
+      id: 105,
+      title: "Instagram Clone Design",
+      description: "Social media platform clone design with modern Instagram-like UI/UX and features",
+      thumbnail: "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1769839434/Screenshot_2026-01-31_113340_pd3e32.png",
+      techStack: ["Figma", "UI/UX", "Social Media", "Mobile Design"],
+      createdDate: "2024-05-10",
+      liveDemo: "https://www.figma.com/design/QGN8z9OQnQCPzHi7IIbdcA/instagram?node-id=0-1&t=o8S0DDyxgHU26GIj-1",
       github: ""
     }
   ];
@@ -57,6 +87,39 @@ const Projects = () => {
     }
   ];
 
+  const hackathonProjects = [
+    {
+      id: 301,
+      title: "EcoTrack - Environmental Monitoring",
+      description: "Real-time environmental monitoring system with IoT integration and data visualization dashboard",
+      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=EcoTrack",
+      techStack: ["React", "Node.js", "MongoDB", "IoT", "Chart.js"],
+      createdDate: "2024-06-15",
+      liveDemo: "https://ecotrack-hackathon.example.com",
+      github: "https://github.com/ishitatrivedi-dell/ecotrack"
+    },
+    {
+      id: 302,
+      title: "MedConnect - Healthcare Platform",
+      description: "Telemedicine platform connecting patients with doctors for remote consultations and health monitoring",
+      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=MedConnect",
+      techStack: ["Next.js", "Express", "PostgreSQL", "WebRTC", "Socket.io"],
+      createdDate: "2024-07-20",
+      liveDemo: "https://medconnect-hackathon.example.com",
+      github: "https://github.com/ishitatrivedi-dell/medconnect"
+    },
+    {
+      id: 303,
+      title: "EduSmart - AI Learning Assistant",
+      description: "AI-powered personalized learning platform with adaptive curriculum and progress tracking",
+      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=EduSmart",
+      techStack: ["React", "Python", "TensorFlow", "FastAPI", "PostgreSQL"],
+      createdDate: "2024-08-10",
+      liveDemo: "https://edusmart-hackathon.example.com",
+      github: "https://github.com/ishitatrivedi-dell/edusmart"
+    }
+  ];
+
   useEffect(() => {
     setProjects(projectsData.value);
   }, []);
@@ -79,6 +142,8 @@ const Projects = () => {
         return projects;
       case 'clone':
         return cloneProjects;
+      case 'hackathon':
+        return hackathonProjects;
       default:
         return projects;
     }
@@ -92,6 +157,8 @@ const Projects = () => {
         return <Code size={20} />;
       case 'clone':
         return <Copy size={20} />;
+      case 'hackathon':
+        return <Trophy size={20} />;
       default:
         return <Code size={20} />;
     }
@@ -105,6 +172,8 @@ const Projects = () => {
         return 'Full Stack';
       case 'clone':
         return 'Clones';
+      case 'hackathon':
+        return 'Hackathons';
       default:
         return 'Projects';
     }
@@ -136,7 +205,7 @@ const Projects = () => {
           className="flex justify-center mb-12"
         >
           <div className="glass inline-flex rounded-xl overflow-hidden p-1">
-            {(['figma', 'fullstack', 'clone']).map((tab) => (
+            {(['figma', 'fullstack', 'hackathon', 'clone']).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}

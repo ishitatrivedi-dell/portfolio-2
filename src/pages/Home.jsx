@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail, Code, Database, Palette, MapPin, Phone, Briefcase, Clock, CheckCircle, Star, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -373,6 +373,50 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-dark to-dark-light">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="text-4xl font-bold mb-4 font-heading">
+              Let's <span className="gradient-text">Connect</span>
+            </h2>
+            <p className="text-xl text-gray-light max-w-3xl mx-auto font-body mb-8">
+              I'm always excited to discuss new opportunities, collaborations, or just chat about technology and innovation.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.a
+                href="https://drive.google.com/file/d/1kqm3Q7a-0VyvN8jFyavWJSP8_GxnGwGm/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-primary text-primary rounded-xl font-semibold transition-all duration-300 hover:bg-primary hover:text-black"
+              >
+                <Download size={20} />
+                Download Resume
+              </motion.a>
+              
+              <motion.button
+                onClick={() => navigateToPage('/contact')}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-black rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
+              >
+                <Mail size={20} />
+                Send Message
+                <ArrowRight size={20} />
+              </motion.button>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>

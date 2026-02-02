@@ -97,17 +97,19 @@ const ModalProject = ({ project, isOpen, onClose }) => {
                         Live Demo
                       </motion.a>
 
-                      <motion.a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex items-center justify-center px-6 py-3 bg-gray-700/50 text-gray-200 rounded-xl hover:bg-gray-600/50 border border-gray-600 hover:border-gray-500 transition-all focus:outline-none focus:ring-2 focus:ring-gray-400"
-                      >
-                        <Github size={18} className="mr-2" />
-                        GitHub
-                      </motion.a>
+                      {project.github && project.github !== "" && (
+                        <motion.a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="flex items-center justify-center px-6 py-3 bg-gray-700/50 text-gray-200 rounded-xl hover:bg-gray-600/50 border border-gray-600 hover:border-gray-500 transition-all focus:outline-none focus:ring-2 focus:ring-gray-400"
+                        >
+                          <Github size={18} className="mr-2" />
+                          GitHub
+                        </motion.a>
+                      )}
                     </div>
                   </div>
                 </div>

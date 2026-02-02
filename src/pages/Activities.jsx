@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Book, Music, Map, PenTool, Heart, Brain, Coffee, Headphones, Globe, BookOpen, Music2, Plane, Pen } from 'lucide-react';
+import { Book, Music, Map, PenTool, Heart, Brain, Coffee, Headphones, Globe, BookOpen, Music2, Plane, Pen, Star, Tv } from 'lucide-react';
 
 const Activities = () => {
   const [selectedActivity, setSelectedActivity] = useState(null);
@@ -17,7 +17,7 @@ const Activities = () => {
         "Books are a uniquely portable magic.",
         "Reading is dreaming with open eyes."
       ],
-      details: "I find solace and wisdom in books, from classic literature to modern self-help. Each book is a journey that expands my perspective and enriches my understanding of the world and human nature."
+      details: "I find solace and wisdom in books, from classic literature to modern self-help. Each book is a journey that expands my perspective and enriches my understanding of the world and human nature. Currently reading 'The Magic' and 'The Secret' - both transformative books that explore the power of positive thinking and manifestation."
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const Activities = () => {
         "Where words fail, music speaks.",
         "Life is a song, love is the music."
       ],
-      details: "Music is my constant companion. From classical melodies to contemporary beats, I find that music has the power to transform moods, enhance focus, and provide a soundtrack to life's most precious moments."
+      details: "Music is my constant companion. From classical melodies to contemporary beats, I find that music has the power to transform moods, enhance focus, and provide a soundtrack to life's most precious moments. My favorite singers are Shreya Ghoshal and Arijit Singh - their voices have the magical ability to evoke deep emotions and create unforgettable musical experiences."
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Activities = () => {
         "The world is a book, and those who do not travel read only one page.",
         "Adventure is worthwhile in itself."
       ],
-      details: "Traveling opens my mind to new perspectives and experiences. Whether it's exploring bustling cities or serene landscapes, each journey teaches me something new about the world and myself."
+      details: "Traveling opens my mind to new perspectives and experiences. While I haven't traveled extensively yet, I've had the privilege of visiting several beautiful states in India including Karnataka, Tamil Nadu, Uttarakhand, Rajasthan, and Maharashtra. Each destination has offered unique cultural experiences, stunning landscapes, and memorable encounters that have enriched my understanding of our diverse country."
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ const Activities = () => {
         "Write what should not be forgotten.",
         "The life of every man is a diary in which he means to write one story..."
       ],
-      details: "Journaling is my sacred practice of self-reflection. It helps me process thoughts, track personal growth, and preserve memories. Each entry is a conversation with my inner self."
+      details: "Journaling is my sacred practice of self-reflection. I follow myself through these written conversations, documenting my journey of personal growth, tracking my progress, and preserving precious memories. Each entry is a dialogue with my inner self, helping me understand my patterns, celebrate my wins, and learn from my experiences."
     },
     {
       id: 5,
@@ -70,6 +70,32 @@ const Activities = () => {
         "In solitude, where we are least alone."
       ],
       details: "Taking time to sit alone and listen to my inner voice is essential for my mental clarity and emotional well-being. These moments of quiet contemplation help me understand myself better and make aligned decisions."
+    },
+    {
+      id: 6,
+      title: "Astronomy",
+      description: "Exploring the cosmos and marveling at celestial wonders",
+      icon: <Star size={32} />,
+      color: "from-indigo-400 to-purple-500",
+      quotes: [
+        "The cosmos is within us. We are made of star-stuff.",
+        "Somewhere, something incredible is waiting to be known.",
+        "We are all in the gutter, but some of us are looking at the stars."
+      ],
+      details: "I love astronomy and find endless fascination in the night sky. Gazing at stars, planets, and galaxies reminds me of our place in the universe and fills me with wonder. I deepen my knowledge by reading astronomy books and watching documentaries about space exploration, cosmic phenomena, and the latest discoveries in astrophysics. It's a humbling and inspiring hobby that connects me to the vastness of existence."
+    },
+    {
+      id: 7,
+      title: "Movies & Series",
+      description: "Immersing in captivating crime and thriller stories",
+      icon: <Tv size={32} />,
+      color: "from-red-400 to-pink-500",
+      quotes: [
+        "The best stories are those that make you think.",
+        "Suspense is the state of waiting for something to happen.",
+        "In the world of crime and thriller, every detail matters."
+      ],
+      details: "I love watching crime and thriller movies and series - there's something incredibly captivating about the intricate plots, psychological depth, and suspenseful storytelling. From detective stories that challenge the mind to psychological thrillers that keep me on the edge of my seat, this genre offers the perfect blend of entertainment and intellectual stimulation. It's my favorite way to unwind while staying engaged."
     }
   ];
 

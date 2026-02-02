@@ -20,7 +20,7 @@ const dockItems = [
   { icon: <Trophy size={24} />, label: 'Hackathons', to: '/#hackathons' },
   { icon: <FileText size={24} />, label: 'Resume', to: '/resume' },
   { icon: <Heart size={24} />, label: 'Activities', to: '/activities' },
-  { icon: <Mail size={24} />, label: 'Contact', to: '/#contact' }, // ✅ FIXED
+  { icon: <Mail size={24} />, label: 'Contact', to: '/contact' },
 ];
 
 const NavbarDock = () => {
@@ -41,7 +41,7 @@ const NavbarDock = () => {
     else if (location.hash === '#hackathons') activeIdx = 3;
     else if (location.pathname === '/resume') activeIdx = 4;
     else if (location.pathname === '/activities') activeIdx = 5;
-    else if (location.hash === '#contact') activeIdx = 6;
+    else if (location.pathname === '/contact') activeIdx = 6;
 
     setActiveIndex(activeIdx);
   }, [location]);
