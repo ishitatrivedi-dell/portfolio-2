@@ -7,6 +7,18 @@ const Skills = () => {
   const [isAutoRotating, setIsAutoRotating] = useState(true);
   const containerRef = useRef(null);
 
+  const getSkillLevel = (level) => {
+    if (level >= 85) return 'Pro';
+    if (level >= 70) return 'Intermediate';
+    return 'Beginner';
+  };
+
+  const getSkillLevelColor = (level) => {
+    if (level >= 85) return 'text-green-400';
+    if (level >= 70) return 'text-yellow-400';
+    return 'text-blue-400';
+  };
+
   const skills = [
     {
       name: 'React',
@@ -187,7 +199,9 @@ const Skills = () => {
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-light">Proficiency</span>
-                  <span className="text-primary-light font-semibold">{skills[activeSkillIndex].level}%</span>
+                  <span className={`font-semibold ${getSkillLevelColor(skills[activeSkillIndex].level)}`}>
+                    {getSkillLevel(skills[activeSkillIndex].level)}
+                  </span>
                 </div>
                 <div className="w-full bg-dark-light rounded-full h-3 overflow-hidden">
                   <motion.div
@@ -236,7 +250,9 @@ const Skills = () => {
             >
               <div className="text-center">
                 {skills[activeSkillIndex].icon}
-                <div className="text-xs font-bold mt-1">{skills[activeSkillIndex].level}%</div>
+                <div className={`text-xs font-bold mt-1 ${getSkillLevelColor(skills[activeSkillIndex].level)}`}>
+                  {getSkillLevel(skills[activeSkillIndex].level)}
+                </div>
               </div>
             </motion.div>
 
@@ -337,11 +353,16 @@ const Skills = () => {
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2 font-heading">{skill.name}</h3>
                   <p className="text-sm text-gray-light mb-3">{skill.category}</p>
-                  <div className="w-full bg-dark-light rounded-full h-2">
-                    <div 
-                      className={`h-full bg-gradient-to-r ${getSkillColor(skill.category)} rounded-full`}
-                      style={{ width: `${skill.level}%` }}
-                    />
+                  <div className="flex items-center justify-between">
+                    <div className="w-full bg-dark-light rounded-full h-2 mr-3">
+                      <div 
+                        className={`h-full bg-gradient-to-r ${getSkillColor(skill.category)} rounded-full`}
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
+                    <span className={`text-xs font-semibold ${getSkillLevelColor(skill.level)} whitespace-nowrap`}>
+                      {getSkillLevel(skill.level)}
+                    </span>
                   </div>
                 </motion.div>
               ))}
@@ -359,11 +380,16 @@ const Skills = () => {
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2 font-heading">{skill.name}</h3>
                   <p className="text-sm text-gray-light mb-3">{skill.category}</p>
-                  <div className="w-full bg-dark-light rounded-full h-2">
-                    <div 
-                      className={`h-full bg-gradient-to-r ${getSkillColor(skill.category)} rounded-full`}
-                      style={{ width: `${skill.level}%` }}
-                    />
+                  <div className="flex items-center justify-between">
+                    <div className="w-full bg-dark-light rounded-full h-2 mr-3">
+                      <div 
+                        className={`h-full bg-gradient-to-r ${getSkillColor(skill.category)} rounded-full`}
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
+                    <span className={`text-xs font-semibold ${getSkillLevelColor(skill.level)} whitespace-nowrap`}>
+                      {getSkillLevel(skill.level)}
+                    </span>
                   </div>
                 </motion.div>
               ))}

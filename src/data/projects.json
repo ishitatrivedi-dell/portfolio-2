@@ -1,5 +1,21 @@
 {
     "value":  [
+                  
+                  {
+                      "id":  2,
+                      "title":  "CampusEvents Pro – Event \u0026 Finance Management Platform",
+                      "description":  "A college-focused event management platform built with the MERN stack to manage events end-to-end. Features include event creation and lifecycle management, participant registrations, hackathon team formation, role-based access control (RBAC), integrated budgeting and expense approval workflows, automated certificate generation, and downloadable financial reports.",
+                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768987407/Screenshot_2026-01-21_145133_ipceae.png",
+                      "techStack":  [
+                                        "React",
+                                        "Tailwind CSS",
+                                        "Node.js",
+                                        "Express",
+                                        "MongoDB"
+                                    ],
+                      "createdDate":  "2026-01-01",
+                      "github":  "https://github.com/ishitatrivedi-dell/Event-mang"
+                  },
                   {
                       "id":  1,
                       "title":  "Skill Scheduler",
@@ -13,38 +29,37 @@
                                         "Tailwind"
                                     ],
                       "createdDate":  "2024-03-10",
-                      "liveDemo":  "https://skill-scheduler-2.onrender.com/",
+                      "liveDemo":  "https://skill-scheduler.onrender.com/",
                       "github":  "https://github.com/ishitatrivedi-dell/skill_scheduler"
                   },
                   {
-                      "id":  2,
-                      "title":  "NST Static Website",
-                      "description":  "A responsive static website built with HTML and CSS, showcasing clean layout design and user-friendly interface. Ideal for beginner-level web projects or static landing pages.",
-                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768206786/Screenshot_2026-01-12_135851_d6dhzj.png",
-                      "techStack":  [
-                                        "CSS",
-                                        "React"
-                                    ],
-                      "createdDate":  "2024-02-05",
-                      "liveDemo":  "https://ishitatrivedi-dell.github.io/nst",
-                      "github":  "https://github.com/ishitatrivedi-dell/nst"
-                  },
-                  {
                       "id":  3,
-                      "title":  "CampusEvents Pro – Event \u0026 Finance Management Platform",
-                      "description":  "A college-focused event management platform built with the MERN stack to manage events end-to-end. Features include event creation and lifecycle management, participant registrations, hackathon team formation, role-based access control (RBAC), integrated budgeting and expense approval workflows, automated certificate generation, and downloadable financial reports.",
-                      "thumbnail":  "https://res.cloudinary.com/dnfqhhyoo/image/upload/v1768987407/Screenshot_2026-01-21_145133_ipceae.png",
+                      "title":  "Learner Routing - Multi-Section Platform",
+                      "description":  "A versatile React and Tailwind CSS application featuring multiple sections including banking, cocktails, and food. The project demonstrates advanced routing capabilities and responsive design patterns across different content categories.",
+                      "thumbnail":  "https://res.cloudinary.com/dliataxzf/image/upload/v1770041404/Screenshot_2026-02-02_193954_sh4sne.png",
                       "techStack":  [
                                         "React",
                                         "Tailwind CSS",
-                                        "Node.js",
-                                        "Express",
-                                        "MongoDB"
+                                        "React Router"
                                     ],
-                      "createdDate":  "2026-01-01",
-                      "liveDemo":  "Coming Soon , in Progress",
-                      "github":  "https://github.com/ishitatrivedi-dell/Event-mang"
+                      "createdDate":  "2024-05-15",
+                      "liveDemo":  "https://learner-routing.onrender.com/",
+                      "github":  "https://github.com/ishitatrivedi-dell/learner_routing"
+                  },
+                  {
+                      "id":  4,
+                      "title":  "Tech Startup - Landing Page",
+                      "description":  "A modern and responsive landing page for a tech startup built with pure HTML and CSS. The project showcases clean design principles, responsive layouts, and professional styling without any JavaScript frameworks.",
+                      "thumbnail":  "https://res.cloudinary.com/dliataxzf/image/upload/v1770041285/Screenshot_2026-02-02_192443_bg21vc.png",
+                      "techStack":  [
+                                        "HTML",
+                                        "CSS",
+                                        "Responsive Design"
+                                    ],
+                      "createdDate":  "2024-06-01",
+                      "liveDemo":  "https://ishitatrivedi-dell.github.io/Tech_startup/",
+                      "github":  "https://github.com/ishitatrivedi-dell/Tech_startup"
                   }
               ],
-    "Count":  7
+    "Count":  9
 }

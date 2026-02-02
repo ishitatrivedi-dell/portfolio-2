@@ -21,7 +21,7 @@ const Hackathons = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {hackathonsData.map((project: any, index: number) => (
+          {hackathonsData.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -56,7 +56,7 @@ const Hackathons = () => {
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.techStack.slice(0, 3).map((tech: any, techIndex: number) => (
+                  {project.techStack.slice(0, 3).map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="px-2 py-1 bg-primary/10 text-primary-light rounded text-xs font-medium border border-primary/20"

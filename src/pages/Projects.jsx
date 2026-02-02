@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { ExternalLink, Github, Figma, Code, Copy, Trophy } from 'lucide-react';
+import { ExternalLink, Github, Figma, Code, Copy } from 'lucide-react';
 import ModalProject from '../components/ModalProject.jsx';
 import projectsData from '../data/projects.json';
 
@@ -67,56 +67,31 @@ const Projects = () => {
   const cloneProjects = [
     {
       id: 201,
-      title: "Netflix Clone",
-      description: "Full-stack Netflix clone with authentication and streaming features",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=Netflix",
-      techStack: ["React", "Node.js", "MongoDB", "Tailwind"],
-      createdDate: "2024-03-10",
-      liveDemo: "https://netflix-clone.example.com",
-      github: "https://github.com/ishitatrivedi-dell/netflix-clone"
+      title: "Spotify Clone",
+      description: "Static Spotify clone",
+      thumbnail: "https://res.cloudinary.com/dliataxzf/image/upload/v1770041875/Screenshot_2026-02-02_194741_upy9in.png",
+      techStack: ["HTML", "CSS"],
+      liveDemo: "https://spotify-react-wine.vercel.app/",
+      github: "https://github.com/ishitatrivedi-dell/Spotify-react"
     },
     {
       id: 202,
-      title: "Spotify Clone",
-      description: "Music streaming app clone with playlist management and audio player",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=Spotify",
-      techStack: ["Next.js", "Express", "PostgreSQL", "Web Audio API"],
-      createdDate: "2024-04-05",
-      liveDemo: "https://spotify-clone.example.com",
-      github: "https://github.com/ishitatrivedi-dell/spotify-clone"
-    }
-  ];
-
-  const hackathonProjects = [
-    {
-      id: 301,
-      title: "EcoTrack - Environmental Monitoring",
-      description: "Real-time environmental monitoring system with IoT integration and data visualization dashboard",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=EcoTrack",
-      techStack: ["React", "Node.js", "MongoDB", "IoT", "Chart.js"],
-      createdDate: "2024-06-15",
-      liveDemo: "https://ecotrack-hackathon.example.com",
-      github: "https://github.com/ishitatrivedi-dell/ecotrack"
+      title: "NST Clone",
+      description: "Newton School of Technology clone with educational platform features",
+      thumbnail: "https://res.cloudinary.com/dliataxzf/image/upload/v1770041285/Screenshot_2026-02-02_193036_glqjay.png",
+      techStack: ["HTML", "CSS"],
+      liveDemo: "https://nst-qdm7.vercel.app/",
+      github: "https://github.com/ishitatrivedi-dell/nst"
     },
     {
-      id: 302,
-      title: "MedConnect - Healthcare Platform",
-      description: "Telemedicine platform connecting patients with doctors for remote consultations and health monitoring",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=MedConnect",
-      techStack: ["Next.js", "Express", "PostgreSQL", "WebRTC", "Socket.io"],
-      createdDate: "2024-07-20",
-      liveDemo: "https://medconnect-hackathon.example.com",
-      github: "https://github.com/ishitatrivedi-dell/medconnect"
-    },
-    {
-      id: 303,
-      title: "EduSmart - AI Learning Assistant",
-      description: "AI-powered personalized learning platform with adaptive curriculum and progress tracking",
-      thumbnail: "https://via.placeholder.com/400x300/1a1a1a/FFA500?text=EduSmart",
-      techStack: ["React", "Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-      createdDate: "2024-08-10",
-      liveDemo: "https://edusmart-hackathon.example.com",
-      github: "https://github.com/ishitatrivedi-dell/edusmart"
+      id: 203,
+      title: "Netflix Clone",
+      description: "Full-stack Netflix clone with authentication and streaming features",
+      thumbnail: "https://res.cloudinary.com/dliataxzf/image/upload/v1770041285/Screenshot_2026-02-02_192257_iluxod.png",
+      techStack: ["React", "Node.js", "MongoDB", "Tailwind"],
+      createdDate: "2024-03-10",
+      liveDemo: "https://netflix-opal-five.vercel.app/",
+      github: "https://github.com/ishitatrivedi-dell/Netflix"
     }
   ];
 
@@ -142,8 +117,6 @@ const Projects = () => {
         return projects;
       case 'clone':
         return cloneProjects;
-      case 'hackathon':
-        return hackathonProjects;
       default:
         return projects;
     }
@@ -157,8 +130,6 @@ const Projects = () => {
         return <Code size={20} />;
       case 'clone':
         return <Copy size={20} />;
-      case 'hackathon':
-        return <Trophy size={20} />;
       default:
         return <Code size={20} />;
     }
@@ -172,8 +143,6 @@ const Projects = () => {
         return 'Full Stack';
       case 'clone':
         return 'Clones';
-      case 'hackathon':
-        return 'Hackathons';
       default:
         return 'Projects';
     }
@@ -205,7 +174,7 @@ const Projects = () => {
           className="flex justify-center mb-12"
         >
           <div className="glass inline-flex rounded-xl overflow-hidden p-1">
-            {(['figma', 'fullstack', 'hackathon', 'clone']).map((tab) => (
+            {(['figma', 'fullstack', 'clone']).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}

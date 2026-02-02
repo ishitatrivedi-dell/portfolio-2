@@ -9,6 +9,7 @@ import Resume from './pages/Resume.jsx';
 import Skills from './pages/Skills.jsx';
 import Activities from './pages/Activities.jsx';
 import Contact from './pages/Contact.jsx';
+import Hackathons from './pages/Hackathons.jsx';
 import './styles/globals.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/skills" element={<Skills />} />
+              <Route path="/hackathons" element={<Hackathons />} />
               <Route path="/activities" element={<Activities />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/*" element={<Home />} />
